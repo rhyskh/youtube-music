@@ -25,6 +25,8 @@ import type { QueueResponse } from '@/types/youtube-music-desktop-internal';
 import type { YouTubeMusicAppElement } from '@/types/youtube-music-app-element';
 import type { SearchBoxElement } from '@/types/search-box-element';
 
+window.chrome.cast = window.caster.cast;
+
 let api: (Element & YoutubePlayer) | null = null;
 let isPluginLoaded = false;
 let isApiLoaded = false;
